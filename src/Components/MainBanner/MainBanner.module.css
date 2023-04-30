@@ -1,0 +1,10 @@
+.MainBanner {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(rgba(0, 0, 10, 0.7), rgba(0, 0, 10, 0.7)),
+    url("../../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-position: center;
+  height: 60vh;
+  background-size: cover;
+}
