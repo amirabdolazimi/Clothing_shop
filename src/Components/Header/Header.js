@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoCall, IoCartSharp, IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [menuCondition, setMenuCondition] = useState(true);
   return (
@@ -32,31 +33,22 @@ const Header = () => {
           }`}
         >
           <div>
-            <a
-              href="#/"
-              className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
-            >
+            <Link className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900">
               <IoHome className="text-lg" />
               <span className="mr-1 text-lg w-max">خانه</span>
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="#/"
-              className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
-            >
+            <Link className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900">
               <IoCall className="text-lg" />
               <span className="mr-1 text-lg w-max">تماس با ما</span>
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="#/"
-              className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
-            >
+            <Link className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900">
               <IoCartSharp className="text-lg" />
               <span className="mr-1 text-lg w-max">محصولات</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

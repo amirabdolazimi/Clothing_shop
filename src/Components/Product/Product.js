@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img from "../../img/jewlries/1.jpg";
+import img from "../../data/img/jewlries/1.jpg";
 import { BiPlus, BiTrash, BiMinus } from "react-icons/bi";
 const Product = () => {
   const [productQuantity, setProductQuantity] = useState(0);
@@ -8,7 +8,7 @@ const Product = () => {
     setProductQuantity((prevState) => prevState + value);
   };
   return (
-    <div className="px-7 py-4 flex flex-col w-3/4 justify-center shadow-lg border-2 rounded-lg border-slate-100">
+    <div className="px-7 py-3 flex flex-col w-3/4 justify-center shadow-lg border-2 rounded-lg border-slate-100">
       <div className="w-full ">
         <img className="w-full" src={img} alt="productImage" />
       </div>
@@ -18,12 +18,12 @@ const Product = () => {
         <p className="leading-7 text-justify">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
           از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است. 
+          سطرآنچنان که لازم است.
         </p>
       </div>
 
       {/* conditional rendering */}
-      <div className="mt-12">
+      <div className="mt-8">
         {productQuantity === 0 ? (
           <button
             className="w-full text-white bg-orange-500 rounded-lg py-2"
