@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import ProductList from "../../ProductList/ProductList";
+import ProductListNavbar from "../../ProductListNavbar/ProductListNavbar";
 
 const ProductListPage = () => {
   return (
     <>
-      <ProductList />
+      <ProductListNavbar />
       <Outlet />
     </>
   );

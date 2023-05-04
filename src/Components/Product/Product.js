@@ -1,25 +1,27 @@
 import { useState } from "react";
-import img from "../../data/img/jewlries/1.jpg";
 import { BiPlus, BiTrash, BiMinus } from "react-icons/bi";
-const Product = () => {
+const Product = ({ price, title, img, name }) => {
   const [productQuantity, setProductQuantity] = useState(0);
 
   const quantityHandler = (value) => {
     setProductQuantity((prevState) => prevState + value);
   };
   return (
-    <div className="px-7 py-3 flex flex-col w-3/4 justify-center shadow-lg border-2 rounded-lg border-slate-100">
-      <div className="w-full ">
-        <img className="w-full" src={img} alt="productImage" />
+    <div className="px-7 py-3 my-5 flex flex-col w-3/4 justify-center shadow-lg border-2 rounded-lg border-slate-100">
+      <div className="w-full items-center justify-center flex">
+        <img className="w-50 h-80 mb-4" src={img} alt="productImage" />
       </div>
-      <div className="text-2xl font-semibold mb-3">انشگتر اسپرت</div>
-      <div className="text-lg mb-3 font-medium "> 100000 تومان</div>
-      <div className="text-medium font-normal">
-        <p className="leading-7 text-justify">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-          از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و
-          سطرآنچنان که لازم است.
-        </p>
+      <div className="text-2xl font-semibold mb-2">نام محصول: </div>
+      <div className="text-left flex flex-col text-xl font-semibold mb-3">
+        <span>{name}</span>
+      </div>
+      <div className="text-left flex justify-between text-lg mb-3 font-medium ">
+        <span>قیمت :</span>
+        <span>{price} $</span>
+      </div>
+      <div className="text-xl my-2">درباره محصول : </div>
+      <div className="text-left text-medium font-normal">
+        <p className="text-left leading-7">{title}</p>
       </div>
 
       {/* conditional rendering */}

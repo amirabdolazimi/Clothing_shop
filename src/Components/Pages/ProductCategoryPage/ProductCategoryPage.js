@@ -1,11 +1,23 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Product from "../../Product/Product";
 
+// to Return products based on their categories
 const ProductCategoryPage = () => {
-  const params = useParams();
-  const state = useLocation();
-  console.log(params, state);
+  const { state } = useLocation();
 
-  return <div>h111</div>;
+  return (
+    <div className="items-center justify-center flex flex-col">
+      {state.map((product) => (
+        <Product
+          key={product.id}
+          name={product.title}
+          title={product.description}
+          img={product.image}
+          price={product.price}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default ProductCategoryPage;
