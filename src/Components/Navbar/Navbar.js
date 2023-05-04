@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getAsyncProducts } from "../../Features/Products/ProductSlice";
 import { IoCall, IoCartSharp, IoHome } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { useSplitProducts } from "../../CustomHooks/useSplitProducts";
 
 const Navbar = () => {
   const [menuCondition, setMenuCondition] = useState(true);
@@ -17,9 +18,7 @@ const Navbar = () => {
 
   // selecting as popluar products
   const { products } = useSelector((product) => product.products);
-  const computerEquipments = products.filter(
-    (product) => product.category === "electronics"
-  );
+  const computerEquipments = useSplitProducts(products, "electronics");
 
   return (
     <div className="flex flex-col justify-center items-center relative">
