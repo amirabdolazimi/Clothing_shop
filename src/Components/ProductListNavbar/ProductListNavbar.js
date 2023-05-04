@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { getAsyncProducts } from "../../Features/Products/ProductSlice";
-
+import { useSplitProducts } from "../../CustomHooks/useSplitProducts";
 const ProductList = () => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -10,18 +10,10 @@ const ProductList = () => {
   }, [dispatch]);
   const { products } = useSelector((product) => product.products);
   // to Spliting products
-  const computerEquipments = products.filter(
-    (product) => product.category === "electronics"
-  );
-  const jewlries = products.filter(
-    (product) => product.category === "jewelery"
-  );
-  const manDress = products.filter(
-    (product) => product.category === "men's clothing"
-  );
-  const womenDress = products.filter(
-    (product) => product.category === "women's clothing"
-  );
+  const jewlries = useSplitProducts(products, "jewelery");
+  const computerEquipments = useSplitProducts(products, "electronics");
+  const manDress = useSplitProducts(products, "men's clothing");
+  const womenDress = useSplitProducts(products, "women's clothing");
 
   // to organizing NavLink props
   const navs = [
