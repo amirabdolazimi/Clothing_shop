@@ -86,7 +86,7 @@ const ShoppingCartPage = () => {
             <span>{totalPrice} $ </span>
           </div>
           <div>
-            <button className="w-full flex items-center justify-center py-2 bg-orange-500 font-semibold text-xl rounded-lg text-white">
+            <button className="w-full flex items-center justify-center py-2 bg-orange-500 active:bg-red-600 font-semibold text-xl rounded-lg text-white">
               نهایی کردن خرید
             </button>
           </div>
