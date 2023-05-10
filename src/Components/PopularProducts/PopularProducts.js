@@ -25,6 +25,7 @@ const PopularProducts = () => {
           <Link
             to={{ pathname: "/product-list/computerEquipment" }}
             state={computerEquipments}
+            className="hover:text-orange-700 transition-colors duration-200 ease-in-out"
           >
             مشاهده همه محصولات
           </Link>

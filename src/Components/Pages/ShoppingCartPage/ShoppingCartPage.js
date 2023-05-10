@@ -6,6 +6,7 @@ import {
   incrementQuantity,
   removeProductFromCart,
 } from "../../../Features/Cart/CartSlice";
+import { Fragment } from "react";
 const ShoppingCartPage = () => {
   const dispatch = useDispatch();
   const { cartProducts, totalItems, totalPrice } = useSelector(
@@ -79,11 +80,17 @@ const ShoppingCartPage = () => {
         ))}
       </div>
       {cartProducts.length !== 0 && (
-        <div>
-          <button className="w-full flex items-center justify-center py-2 bg-orange-500 font-semibold text-xl rounded-lg text-white">
-            نهایی کردن خرید
-          </button>
-        </div>
+        <Fragment>
+          <div className="flex justify-between items-center text-xl my-8">
+            <span className="font-semibold text-2xl">قیمت کل :</span>
+            <span>{totalPrice} $ </span>
+          </div>
+          <div>
+            <button className="w-full flex items-center justify-center py-2 bg-orange-500 font-semibold text-xl rounded-lg text-white">
+              نهایی کردن خرید
+            </button>
+          </div>
+        </Fragment>
       )}
     </div>
   );
