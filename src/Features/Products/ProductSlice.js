@@ -41,5 +41,5 @@ const productSlice = createSlice({
   },
 });
 
-// export const {} = counterSlice.actions;
+// export const {} = productSlice.actions;
 export default productSlice.reducer;

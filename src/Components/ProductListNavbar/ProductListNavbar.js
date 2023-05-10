@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { getAsyncProducts } from "../../Features/Products/ProductSlice";
-import { useSplitProducts } from "../../CustomHooks/useSplitProducts";
+import { useSplitProducts } from "../../utils/useSplitProducts";
 const ProductList = () => {
   const dispatch = useDispatch();
   useEffect(() => {

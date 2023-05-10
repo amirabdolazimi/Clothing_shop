@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getAsyncProducts } from "../../Features/Products/ProductSlice";
 import { IoCall, IoCartSharp, IoHome } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { useSplitProducts } from "../../CustomHooks/useSplitProducts";
+import { useSplitProducts } from "../../utils/useSplitProducts";
 
 const Navbar = () => {
   const [menuCondition, setMenuCondition] = useState(true);
