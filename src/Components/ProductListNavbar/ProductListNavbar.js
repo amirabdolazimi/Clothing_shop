@@ -39,7 +39,7 @@ const ProductList = () => {
     },
   ];
   return (
-    <div className="px-12 my-10">
+    <div className="px-4 my-10">
       <div className="w-full flex justify-between">
         {navs.map((link) => (
           <NavLink

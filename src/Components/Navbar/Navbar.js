@@ -43,7 +43,7 @@ const Navbar = () => {
         ></span>
       </div>
       <div
-        style={{ right: "-48px" }}
+        style={{ right: "-16px" }}
         className={`text-center content-center absolute top-12 z-50 ${
           menuCondition ? "hidden" : "block"
         }`}
@@ -54,13 +54,13 @@ const Navbar = () => {
             className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
           >
             <IoHome className="text-lg" />
-            <span className="mr-1 text-lg w-max">خانه</span>
+            <span className="mr-1 text-md w-max">خانه</span>
           </Link>
         </div>
         <div onClick={menuConditionHandler}>
           <Link className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900">
             <IoCall className="text-lg" />
-            <span className="mr-1 text-lg w-max">تماس با ما</span>
+            <span className="mr-1 text-md w-max">تماس با ما</span>
           </Link>
         </div>
         <div onClick={menuConditionHandler}>
@@ -70,7 +70,7 @@ const Navbar = () => {
             className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
           >
             <IoCartSharp className="text-lg" />
-            <span className="mr-1 text-lg w-max">محصولات</span>
+            <span className="mr-1 text-md w-max">محصولات</span>
           </Link>
         </div>
       </div>

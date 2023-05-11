@@ -18,7 +18,7 @@ const PopularProducts = () => {
   const computerEquipments = useSplitProducts(products, "electronics");
 
   return (
-    <div className="px-12 py-7">
+    <div className="px-4 py-7">
       <div className="justify-between flex flex-col border-b pb-7 border-slate-400 mb-8">
         <h4 className="mb-4 text-2xl font-bold">محبوب ترین محصولات</h4>
         <h5 className="font-semibold text-xl text-orange-500">

@@ -7,17 +7,17 @@ const Header = () => {
   console.log(totalItems);
 
   return (
-    <header className="bg-slate-900 flex justify-between px-12 items-center py-4">
+    <header className="bg-slate-900 flex justify-between px-4 items-center py-4">
       <Navbar />
       <Link to="shopping-cart">
-        <button className="text-lg border-2 relative px-2 hover:bg-orange-500 py-2 transition duration-300 ease-in-out text-slate-100 border-orange-500 font-semibold">
+        <button className="text-md border-2 relative p-2 hover:bg-orange-500 transition duration-300 ease-in-out text-slate-100 border-orange-500 font-semibold">
           <span>مشاهده سبد خرید</span>
           <span className="absolute px-2 bg-orange-600 text-md rounded-full text-white bottom-7">
             {totalItems}
           </span>
         </button>
       </Link>
-      <h1 className="text-4xl text-orange-500 font-semibold">(: کالامالا</h1>
+      <h1 className="text-3xl text-orange-500 font-semibold">(: کالامالا</h1>
     </header>
   );
 };
