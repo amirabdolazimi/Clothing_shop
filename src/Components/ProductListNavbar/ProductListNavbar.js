@@ -46,11 +46,12 @@ const ProductList = () => {
             className={(navData) =>
               navData.isActive ? "bg-orange-300 rounded" : null
             }
+            style={{ margin: "12px 0px" }}
             key={link.path}
             to={link.path}
             state={link.state}
           >
-            <div className="p-2 text-center text-sm font-bold border-2 border-orange-300 rounded">
+            <div className="p-2 text-center text-sm font-semibold border-2 border-orange-300 rounded">
               {link.title}
             </div>
           </NavLink>
