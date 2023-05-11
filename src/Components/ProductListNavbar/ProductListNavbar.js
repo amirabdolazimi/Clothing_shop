@@ -39,7 +39,7 @@ const ProductList = () => {
     },
   ];
   return (
-    <div className="px-4 my-10">
+    <div className="px-4 my-8">
       <div className="w-full flex justify-between">
         {navs.map((link) => (
           <NavLink
@@ -50,7 +50,7 @@ const ProductList = () => {
             to={link.path}
             state={link.state}
           >
-            <div className="py-2 px-3 border-2 border-orange-300 rounded">
+            <div className="p-2 text-center text-sm font-bold border-2 border-orange-300 rounded">
               {link.title}
             </div>
           </NavLink>
