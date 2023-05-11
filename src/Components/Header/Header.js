@@ -17,7 +17,9 @@ const Header = () => {
           </span>
         </button>
       </Link>
-      <h1 className="text-3xl text-orange-500 font-semibold">(: کالامالا</h1>
+      <h1 className="text-3xl select-none text-orange-500 font-semibold">
+        (: کالامالا
+      </h1>
     </header>
   );
 };
