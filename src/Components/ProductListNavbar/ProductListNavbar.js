@@ -40,7 +40,7 @@ const ProductList = () => {
   ];
   return (
     <div className="px-4 my-8">
-      <div className="w-full flex justify-between">
+      <div className="w-full flex flex-wrap justify-between">
         {navs.map((link) => (
           <NavLink
             className={(navData) =>
