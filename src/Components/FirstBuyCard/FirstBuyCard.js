@@ -1,10 +1,10 @@
 const FirstBuyCard = () => {
   return (
-    <div className="mt-10 px-5 py-5 bg-rose-100 rounded-xl">
-      <h6 className="font-bold text-2xl mb-1">
+    <div className="mt-10 px-4 py-5 bg-rose-100 rounded-xl">
+      <h6 className="font-bold text-xl mb-1">
         اولین خریدتو همین الان انجام بده
       </h6>
-      <p className="leading-7 font-bold text-sm">
+      <p className="leading-7 font-semibold text-sm">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
         سطرآنچنان که لازم است .
