@@ -58,7 +58,10 @@ const Navbar = () => {
           </Link>
         </div>
         <div onClick={menuConditionHandler}>
-          <Link className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900">
+          <Link
+            to="*"
+            className="hover:border-b-4 hover:border-orange-500 text-slate-200 px-6 py-3 flex justify-center items-center w-full bg-slate-900"
+          >
             <IoCall className="text-lg" />
             <span className="mr-1 text-md w-max">تماس با ما</span>
           </Link>

@@ -3,10 +3,9 @@ import Product from "../../Product/Product";
 // to Return products based on their categories
 const ProductCategoryPage = () => {
   const { state } = useLocation();
-  console.log(state);
   return (
-    <div className="items-center justify-center flex flex-col">
-      {state.map((product) => (
+    <div className="justify-items-center px-4 grid grid-cols-1 md:grid-cols-2 md:justify-between lg:grid-cols-3 lg:gap-cols-1">
+      {state?.map((product) => (
         <Product {...product} key={product.id} />
       ))}
     </div>

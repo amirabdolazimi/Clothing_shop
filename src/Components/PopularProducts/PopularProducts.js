@@ -31,7 +31,7 @@ const PopularProducts = () => {
           </Link>
         </h5>
       </div>
-      <div className="items-center justify-center flex flex-col">
+      <div className="justify-items-center grid grid-cols-1 md:grid-cols-2 md:justify-between lg:grid-cols-3 lg:gap-cols-1">
         {computerEquipments?.map((product) => (
           <Product key={product.id} {...product} />
         ))}

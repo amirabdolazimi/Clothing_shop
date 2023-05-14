@@ -5,6 +5,7 @@ import ProductListPage from "./Components/Pages/ProductListPage/ProductListPage"
 import ProductCategoryPage from "./Components/Pages/ProductCategoryPage/ProductCategoryPage";
 import PopularProductsPage from "./Components/Pages/PopularProductPage/PopularProductsPage";
 import ShoppingCartPage from "./Components/Pages/ShoppingCartPage/ShoppingCartPage";
+import NotFound from "./Components/Pages/NotFoundPage/NotFoundPage";
 function App() {
   return (
     <Layout>
@@ -17,6 +18,7 @@ function App() {
             element={<ProductCategoryPage />}
           />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   );

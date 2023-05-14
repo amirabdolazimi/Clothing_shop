@@ -12,6 +12,7 @@ module.exports = {
     "./src/Components/FirstBuyCard/FirstBuyCard.js",
     "./src/Components/ProductListNavbar/ProductListNavbar.js",
     "./src/Components/Pages/ShoppingCartPage/ShoppingCartPage.js",
+    "./src/Components/Pages/NotFound/NotFound.js",
   ],
   theme: {
     extend: {},

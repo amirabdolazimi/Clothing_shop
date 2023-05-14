@@ -40,7 +40,7 @@ const ProductList = () => {
   ];
   return (
     <div className="px-4 my-8">
-      <div className="w-full flex flex-wrap justify-between">
+      <div className="w-full flex flex-wrap justify-between md:w-3/4 md:mx-auto lg:w-2/3 lg:mx-auto">
         {navs.map((link) => (
           <NavLink
             className={(navData) =>
@@ -51,7 +51,7 @@ const ProductList = () => {
             to={link.path}
             state={link.state}
           >
-            <div className="p-2 text-center text-sm font-semibold border-2 border-orange-300 rounded">
+            <div className="p-2 text-center text-sm font-semibold border-2 border-orange-300 rounded md:text-base lg:text-lg lg:p-3 lg:font-bold">
               {link.title}
             </div>
           </NavLink>
