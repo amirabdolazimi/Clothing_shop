@@ -6,7 +6,6 @@ import {
   incrementQuantity,
   removeProductFromCart,
 } from "../../../Features/Cart/CartSlice";
-import { Fragment } from "react";
 const ShoppingCartPage = () => {
   const dispatch = useDispatch();
   const { cartProducts, totalItems, totalPrice } = useSelector(
@@ -23,11 +22,11 @@ const ShoppingCartPage = () => {
         </div>
       )}
       {/* cartProducts section */}
-      <div className="flex flex-col items-center justify-center">
+      <div className="justify-items-center  px-4 grid grid-cols-1 md:grid-cols-2 md:justify-between lg:grid-cols-3 lg:gap-cols-1">
         {cartProducts.map((p) => (
           <div
             key={p.id}
-            className="px-5 w-6/7 py-4 my-8 border-2 border-red-150 shadow rounded-xl"
+            className="px-6 py-3 my-5 grid  w-5/6 shadow-lg lg:shadow-xl border-2 rounded-lg border-slate-100 lg:w-10/12 lg:mx-4"
           >
             <div className="w-full items-center justify-center flex">
               <img
@@ -80,17 +79,19 @@ const ShoppingCartPage = () => {
         ))}
       </div>
       {cartProducts.length !== 0 && (
-        <Fragment>
+        <div className="w-full lg:flex lg:justify-between lg:items-center">
           <div className="flex justify-between items-center text-xl my-8">
-            <span className="font-semibold text-xl">قیمت کل :</span>
-            <span className="text-lg">{totalPrice} $ </span>
+            <span className="font-semibold text-xl lg:text-2xl">قیمت کل :</span>
+            <span className="text-lg lg:text-xl lg:text-semibold lg:mr-6">
+              {totalPrice} $
+            </span>
           </div>
-          <div>
-            <button className="w-full flex items-center justify-center py-2 bg-orange-500 active:bg-red-600 font-semibold text-lg rounded-lg text-white">
+          <div className="lg:w-2/6 lg:justify-self-end">
+            <button className="w-full   flex items-center justify-center py-2 bg-orange-500 active:bg-red-600 font-semibold text-lg rounded-lg text-white">
               نهایی کردن خرید
             </button>
           </div>
-        </Fragment>
+        </div>
       )}
     </div>
   );
