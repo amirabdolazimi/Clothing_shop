@@ -51,7 +51,7 @@ const ProductList = () => {
             to={link.path}
             state={link.state}
           >
-            <div className="p-2 text-center text-sm font-semibold border-2 border-orange-300 rounded md:text-base lg:text-lg lg:p-3 lg:font-bold">
+            <div className="p-2 shadow lg:shadow-lg text-center text-sm font-semibold border-2 border-orange-300 rounded md:text-base lg:text-lg lg:p-3 lg:font-bold">
               {link.title}
             </div>
           </NavLink>

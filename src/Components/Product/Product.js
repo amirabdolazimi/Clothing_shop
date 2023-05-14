@@ -8,7 +8,7 @@ const Product = (product) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="px-6 py-3 my-5 grid w-5/6 shadow-lg border-2 rounded-lg border-slate-100 lg:w-11/12 lg:mx-4">
+    <div className="px-6 py-3 my-5 grid w-5/6 shadow-lg lg:shadow-xl border-2 rounded-lg border-slate-100 lg:w-10/12 lg:mx-4">
       <div className="w-full items-center justify-center flex">
         <img className="w-fit py-2 h-80 mb-4" src={image} alt="productImage" />
       </div>

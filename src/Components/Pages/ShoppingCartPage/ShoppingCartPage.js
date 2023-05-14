@@ -17,7 +17,7 @@ const ShoppingCartPage = () => {
     <div className="px-4 py-4">
       {/* empty shopping-cart  section*/}
       {cartProducts.length === 0 && (
-        <div className="flex select-none brightness-200 justify-center font-medium items-center text-2xl py-10 text-slate-700 opacity-40">
+        <div className="flex select-none brightness-200 justify-center font-medium items-center text-2xl py-10 text-slate-700 opacity-40 lg:text-4xl">
           <h2 className="ml-2">سبد خرید شما خالی است !</h2>
           <IoCartSharp className="text-4xl rotate-45" />
         </div>
