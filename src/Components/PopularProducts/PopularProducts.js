@@ -32,7 +32,7 @@ const PopularProducts = () => {
         </h5>
       </div>
       <div className="items-center justify-center flex flex-col">
-        {computerEquipments.map((product) => (
+        {computerEquipments?.map((product) => (
           <Product key={product.id} {...product} />
         ))}
       </div>
