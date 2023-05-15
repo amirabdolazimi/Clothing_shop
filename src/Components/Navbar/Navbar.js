@@ -45,7 +45,7 @@ const Navbar = () => {
       <div
         style={{ right: "-16px" }}
         className={`text-center content-center absolute top-12 z-50 lg:flex lg:flex-row lg:block lg:static ${
-          menuCondition ? "sm:hidden" : "sm:block"
+          menuCondition ? "hidden" : "block"
         }`}
       >
         <div onClick={menuConditionHandler} className="lg:mx-3">
