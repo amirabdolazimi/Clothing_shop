@@ -4,7 +4,6 @@ import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
   const { totalItems } = useSelector((state) => state.cart);
-  console.log(totalItems);
 
   return (
     <header className="bg-slate-900 flex justify-between px-4 items-center py-4">
